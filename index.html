@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SurveyForm</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Knowing our partners</h1>
+        <p id="description">Thank you for taking the time to tell us about you</p>
+    </header>
+
+    <form action="#" id="survey-form">
+        <label for="name" id="name-label">Enter your name</label>
+        <input type="text" id="name" placeholder="Your Name"><br>
+        <label for="email" id="email-label">Enter your email</label>
+        <input type="email" id="email" placeholder="email"><br>
+        <label for="age" id="number-label">Age (optional)</label>
+        <input type="number" id="number" min="10" max="99" placeholder="Age"><br>
+        <label for="dropdown">Describe the role that best fits you:</label>
+        <select name="roles" id="dropdown" aria-placeholder="select an option">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="employee">Employee</option>
+            <option value="entrepreneur">Entrepreneur</option>
+            <option value="researcher">Researcher</option>
+        </select><br>
+        <label for="gender">Please select your gender:</label>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div><br>
+
+        <label for="professionalField">Please select the professional field you're interested in:</label>
+        <div class="professional-options"><input type="checkbox" id="machineLearning" name="professionalField" value="machineLearning">
+            <label for="machineLearning">Machine Learning</label><br>
+            <input type="checkbox" id="webDevelopment" name="professionalField" value="webDevelopment">
+            <label for="webDevelopment">Web Development</label><br>
+            <input type="checkbox" id="videogames" name="professionalField" value="videogames">
+            <label for="videogames">Video Games</label><br>
+            <input type="checkbox" id="augmentedReality" name="professionalField" value="augmentedReality">
+            <label for="augmentedReality">Augmented Reality</label></div><br>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea><br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <footer class="footer">2020 | Desarrollado por Santiago Betancur Graciano</footer>
+</body>
+
+</html>
